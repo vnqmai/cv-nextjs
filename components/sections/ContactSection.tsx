@@ -74,7 +74,7 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
   const resumeHref = "/cv/FrontendDeveloper_VoNgocQuynhMai.pdf";
   const emailHref = "mailto:vnqmai01@gmail.com";
   const githubHref = "https://github.com/vnqmai";
-  const linkedInHref = "https://www.linkedin.com"; // sửa thành LinkedIn thật của bạn
+  const linkedInHref = "https://www.linkedin.com/in/mai-vo-239420165"; // sửa thành LinkedIn thật của bạn
 
   const linkItems = [
     {
@@ -84,7 +84,8 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
       label:
         lang === "en"
           ? "Resume"
-          : "CV"
+          : "CV",
+      download: true
     },
     {
       key: "linkedin",
@@ -93,7 +94,8 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
       label:
         lang === "en"
           ? "LinkedIn"
-          : "LinkedIn"
+          : "LinkedIn",
+      download: false
     },
     {
       key: "github",
@@ -102,7 +104,8 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
       label:
         lang === "en"
           ? "GitHub"
-          : "GitHub"
+          : "GitHub",
+      download: false
     },
     {
       key: "email",
@@ -111,7 +114,8 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
       label:
         lang === "en"
           ? "Email"
-          : "Email"
+          : "Email",
+      download: false
     },
   ];
 
@@ -174,6 +178,7 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
                 href={item.href}
                 target={item.key === "email" ? undefined : "_blank"}
                 rel={item.key === "email" ? undefined : "noreferrer"}
+                download={item.download}
                 className="inline-flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-[color:var(--chip-bg)] transition-colors"
               >
                 <span className="text-base">{item.icon}</span>
