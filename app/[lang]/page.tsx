@@ -33,7 +33,6 @@ const useLenisSmoothScroll = () => {
   useEffect(() => {
     const lenis = new Lenis({
       smoothWheel: true,
-      smoothTouch: false,
       lerp: 0.08
     });
 
@@ -60,7 +59,9 @@ const useLenisSmoothScroll = () => {
   }, []);
 };
 
-const LangPage: React.FC<{ params: { lang: string } }> = ({ params }) => {
+const LangPage: React.FC<{ params: Promise<{ lang: string }> }> = ({
+  params
+}) => {
   const router = useRouter();
   
   // 👇 unwrap params Promise bằng React.use (Next yêu cầu)
