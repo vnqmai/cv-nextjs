@@ -18,11 +18,16 @@
         "name": "next"
       }
     ],
+    // "paths": {
+    //   "@/*": ["./*"]
+    // }
+    "baseUrl": ".",           // rất quan trọng
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"]            // alias @ -> root (app, lib, components,...)
     }
   },
   "include": [
+    "svgr.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
