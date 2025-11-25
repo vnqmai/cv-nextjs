@@ -61,7 +61,7 @@ export const AboutSection: React.FC<Props> = ({ lang }) => {
   };
 
   return (
-    <section id="about" className="section">
+    <section id="about" className="section overflow-x-hidden">
       <div className="section-inner grid md:grid-cols-2 gap-10 items-center">
         <div className="about-image relative">
           <div

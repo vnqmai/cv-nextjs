@@ -187,8 +187,8 @@ export const HeroSection: React.FC<Props> = ({ lang }) => {
     >
       {/* background blobs + dots */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="hero-blob absolute -top-32 -left-20 w-72 h-72 rounded-full bg-[#D81B60]/25 blur-3xl" />
-        <div className="hero-blob absolute -bottom-32 -right-10 w-80 h-80 rounded-full bg-emerald-400/20 blur-3xl" />
+        <div className="hero-blob absolute -top-32 left-0 w-72 h-72 rounded-full bg-[#D81B60]/25 blur-3xl" />
+        <div className="hero-blob absolute -bottom-32 right-0 w-80 h-80 rounded-full bg-emerald-400/20 blur-3xl" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent)] opacity-60" />
         <div className="hero-dot absolute top-1/3 left-10 w-8 h-8 rounded-full bg-[#D81B60]/30 blur-xl" />
         <div className="hero-dot-2 absolute bottom-1/4 right-16 w-6 h-6 rounded-full bg-emerald-400/30 blur-xl" />
