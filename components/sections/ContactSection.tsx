@@ -71,7 +71,7 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
   // };
 
   // nhớ copy file CV vào /public/cv/FrontendDeveloper_VoNgocQuynhMai.pdf
-  const resumeHref = "/cv/FrontendDeveloper_VoNgocQuynhMai.pdf";
+  const resumeHref = "https://drive.google.com/file/d/1CuftMG_RPyabohJe3K117c6tUBy9xsMF/view?usp=sharing";
   const emailHref = "mailto:vnqmai01@gmail.com";
   const githubHref = "https://github.com/vnqmai";
   const linkedInHref = "https://www.linkedin.com/in/mai-vo-239420165"; // sửa thành LinkedIn thật của bạn
@@ -85,7 +85,7 @@ export const ContactSection: React.FC<Props> = ({ lang }) => {
         lang === "en"
           ? "Resume"
           : "CV",
-      download: true
+      download: false
     },
     {
       key: "linkedin",
